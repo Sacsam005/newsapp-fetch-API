@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: auto;
+}
+a.nav-link {
+  font-weight: bold;
+  
+}
+
+.card-body{
+  height: 150px;
+}
+
+.card img {
+  width: auto;
+  height: 150px;
+}
+
+h5.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p.card-text {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1.2rem;
+    }
+}
