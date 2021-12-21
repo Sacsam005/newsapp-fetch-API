@@ -4,11 +4,14 @@
 }
 a.nav-link {
   font-weight: bold;
-  
+}
+
+.btn-sm {
+  width: 50%;
 }
 
 .card-body{
-  height: 150px;
+  height: 200px;
 }
 
 .card img {
@@ -29,4 +32,42 @@ p.card-text {
   h2 {
     font-size: 1.2rem;
     }
+
+    .card-body{
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+  width: 100%;
+  height: auto;
+}
+
+  h2 {
+    font-size: 1.2rem;
+    }
+
+    .card-body{
+      width: auto;
+  height: 275px;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+}
+.btn-sm {
+  width: 75%;
+}
+a.btn-sm {
+  font-size: 1rem;
+}
 }
