@@ -1,23 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Estonia&family=Roboto+Mono:wght@100&family=Sorts+Mill+Goudy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Titillium+Web:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Roboto+Mono:wght@100&family=Sorts+Mill+Goudy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&family=Titillium+Web:wght@200&display=swap');
 
 * {
-  font-family: "Genos";
+  font-family: 'Genos';
   height: auto;
   background: black;
   color: white;
 }
 
 /* navbar */
-
-.navbar ul {
-  margin: 0 auto;
-  padding: 3vmin;
-  word-spacing: 3vmin;
-  text-decoration: none;
+li.nav-item a.nav-link {
+  color: white;
 }
 
 .navbar ul li {
+  margin: 0 auto;
+  padding: 1vmin;
+  word-spacing: 2vmin;
+  text-decoration: none;
+}
+
+nav ul li {
   font-size: 1.3em;
   font-weight: bold;
   display: inline-block;
@@ -26,7 +29,8 @@
   justify-content: center;
 }
 
-.navbar ul li a {
+a.nav-link,
+a.dropdown-item {
   color: white;
   text-decoration: none;
   list-style-type: none;
@@ -35,9 +39,13 @@
   transition: all 0.5s ease-in-out;
 }
 
-.navbar ul li a:hover {
+a.nav-link:hover {
   font-size: 1.75rem;
   color: orange;
+}
+
+a.dropdown-item:hover {
+  font-size: 1.25rem;
 }
 
 #logo {
@@ -50,26 +58,16 @@
   transition: 5s ease-in-out;
 }
 
-header {
-  background-color: black;
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+  background-color: black !important;
 }
 
-.links i {
+.navbar-nav i {
+  margin: 1vmin;
+}
+
+.dropdown-divider {
   color: white;
-  margin: 0.5vmin;
-}
-
-.checkbtn {
-  font-size: 2rem;
-  color: white;
-  line-height: 5rem;
-  margin-right: 3.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
 }
 
 .dropdown-menu a {
@@ -89,7 +87,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
 
 b {
@@ -100,21 +97,13 @@ span.result {
   color: orange;
   font-weight: bold;
   text-shadow: 2px 5px 10px orange;
-  background: linear-gradient(
-    to right bottom,
-    rgba(70, 68, 68, 0.01),
-    rgba(70, 68, 68, 0.01)
-  );
+  background: linear-gradient(to right bottom, rgba(70, 68, 68, 0.01), rgba(70, 68, 68, 0.01));
 }
 
 .glass {
   width: 60%;
   min-height: 65vh;
-  background: linear-gradient(
-    to right bottom,
-    rgba(65, 65, 65, 0.3),
-    rgba(65, 65, 65, 0.4)
-  );
+  background: linear-gradient(to right bottom, rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.4));
   border-radius: 2rem;
   margin: 0 auto;
   padding-top: 5rem;
@@ -122,11 +111,7 @@ span.result {
 
 .circle1,
 .circle2 {
-  background: linear-gradient(
-    to right bottom,
-    rgba(70, 68, 68, 0.3),
-    rgba(70, 68, 68, 0.2)
-  );
+  background: linear-gradient(to right bottom, rgba(70, 68, 68, 0.3), rgba(70, 68, 68, 0.2));
   height: 10rem;
   width: 10rem;
   position: absolute;
@@ -142,11 +127,7 @@ span.result {
 
 .glass h4,
 .glass p {
-  background: linear-gradient(
-    to right bottom,
-    rgba(70, 68, 68, 0.01),
-    rgba(70, 68, 68, 0.01)
-  );
+  background: linear-gradient(to right bottom, rgba(70, 68, 68, 0.01), rgba(70, 68, 68, 0.01));
   line-height: 2rem;
   font-size: 2rem;
 }
@@ -212,7 +193,7 @@ span.result {
 }
 
 .user::after {
-  content: "";
+  content: '';
   clear: both;
 }
 
@@ -408,7 +389,7 @@ ul {
 }
 
 #item1.card {
-  height: 50%;
+  height: 55%;
 }
 
 #item1.card a:hover {
@@ -470,14 +451,14 @@ p::first-letter {
   font-size: xx-large;
 }
 
-.sitemap .links a {
+.sitemap .nav-item a {
   text-decoration: none;
   color: white;
   line-height: 2rem;
   transition: all 0.5s ease-in;
 }
 
-.sitemap .links a:hover {
+.sitemap .nav-item a:hover {
   color: orange;
   border-bottom: 1px solid white;
   transform: scale(2);
@@ -511,13 +492,13 @@ form input::placeholder {
   color: black !important;
 }
 
-.rights p a {
+p.text-center a {
   text-decoration: none;
   list-style-type: none;
   transition: all 0.5s ease-in-out;
 }
 
-.rights p a:hover {
+p.text-center a:hover {
   font-size: 1.75rem;
 }
 
@@ -534,8 +515,7 @@ section.article {
   margin-top: 1rem;
 }
 
-#chat-bot-launcher-container.chat-bot-avatar-launcher
-  .chat-bot-launcher-button {
+#chat-bot-launcher-container.chat-bot-avatar-launcher .chat-bot-launcher-button {
   box-shadow: 5px 5px 5px 5px orange !important;
   text-decoration: none;
 }
@@ -631,8 +611,8 @@ video {
 /* end of animations */
 
 .content img {
-  width: 10vmin;
-  height: 10vmin;
+  width: 8vmin;
+  height: 8vmin;
   margin-top: 0.5rem;
 }
 
