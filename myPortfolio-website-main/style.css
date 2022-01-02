@@ -60,6 +60,7 @@ a.dropdown-item:hover {
 
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   background-color: black !important;
+  padding-left: 3rem;
 }
 
 .navbar-nav i {
@@ -117,7 +118,7 @@ span.result {
   position: absolute;
   backdrop-filter: blur(10rem);
   opacity: 0.9;
-  animation: zoom 0.5s ease-in;
+  animation: zoom 0.25s ease-in;
 }
 
 .dashboard {
@@ -162,7 +163,7 @@ span.result {
 
 .circle2 {
   left: 13%;
-  top: 95%;
+  top: 87%;
   border-radius: 50%;
 }
 
@@ -563,7 +564,7 @@ svg {
 }
 
 video {
-  animation: zoomIn 5s ease-in-out;
+  animation: zoomIn 0.5s ease-in-out;
 }
 
 @keyframes zoomIn {
@@ -577,11 +578,11 @@ video {
 }
 
 #item1.card {
-  animation: slideFromLeft 5s ease-in-out;
+  animation: slideFromLeft 0.5s ease-in-out;
 }
 
 #item2.card {
-  animation: slideFromRight 5s ease-in-out;
+  animation: slideFromRight 0.5s ease-in-out;
 }
 
 @keyframes slideFromLeft {
