@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap");
+* {
+  font-family: 'Changa', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.date-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.date-container .react-datepicker__input-container, .date-container .age-box input {
+  width: auto;
+  outline: 1px solid black;
+}
+
+.age-box label {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Fondamento&display=swap')
+
+@import './variable'
+
+// General Styling
+*
+    font-family: 'Fondamento', cursive
+    @extend %marginPadding
+    box-sizing: border-box
+    transition: all .2s linear
+
+html
+    overflow-x: hidden
+    scroll-behavior: smooth
+    scroll-padding-top: 9rem
+
+    &::webkit-scrollbar
+        width: 1.5rem
+
+    &::webkit-scrollbar-track
+        background: $primaryFont
+
+    &::webkit-scrollbar-thumb
+        background-color: $primaryColor
+
+body
+    background-color: $primaryColor
+    color: $primaryFont
+    width: 100%
+
+// Header Section Styles
+
+#menu-btn
+    color: $primaryFont
+    cursor: pointer
+    display: none
+
+span
+    color: $primaryDark
+    font-size: $fontMed
+
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    background: $primaryDark
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    text-decoration: none
+    align-items: center
+    padding: 0 1rem
+
+    .logo
+        font-size: $fontMed
+        color: $primaryFont
+        font-style: italic
+        display: flex
+        text-decoration: none
+        &::after
+            content: "PicSTUDIOS"
+            margin: 0 0.5rem
+
+    .navbar
+        width: 100%
+        justify-content: center
+        padding-top: 1.3rem
+
+        ul
+            justify-content: center
+            align-items: center
+            padding: 0
+
+            li
+                list-style: none
+                display: inline-block
+                margin: 0 0.5rem
+
+                a
+                    color: $primaryFont
+                    font-size: $fontLarge / 2
+                    text-decoration: none
+                    font-style: italic
+                    font-weight: bolder
+                    &:hover
+                        border-bottom: 1px solid $primaryFont
+
+    .social-icons
+        display: flex
+
+        a
+            i
+                color: $primaryFont
+                margin: 0 0.5rem
+
+// End of Header Styling
+
+// Home Section Styling
+
+section
+    padding: 0 1rem
+
+    .content
+        display: block
+        padding: 1rem 1rem
+
+        .form-box
+            background: #767676
+            padding: 1rem 1rem
+            height: 29%
+            border-bottom-right-radius: 60px
+            @media ( max-width:680px  )
+                height: 55%
+
+    .image-section
+        img
+            width: 100%
+            padding: 0
+            margin: 0 auto
+            @include box-shadow()
+
+.home
+    margin-top: 10rem
+    width: auto
+    display: flex
+    min-height: 80vh
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    grid-gap: 2rem
+
+    // End of Home Section Styling 
+
+    // Hero Section Styling
+
+.hero-container
+    width: 100%
+    height: 100%
+
+    h1
+        text-align: center
+        color: $primaryDark
+        text-shadow: 2px 2px 2px white
+        background: url(./images/back.jpg) center/cover no-repeat fixed
+
+// End of Hero Section Styling
+
+// Main Section Styling
+.main
+    height: auto
+    width: 100%
+
+.image-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+
+    .image
+        width: 100%
+        height: auto
+    img
+        width: 100%
+// End of Main Section Styling
+
+// Pricing Section styling
+.pricing-container
+    width: 100%
+    height: auto
+    margin: 0 auto
+
+    .pricing-content
+        height: auto
+        padding: 0 2rem
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr
+
+        .pricing-details
+            line-height: 3rem
+            height: 50vh
+            padding: 2rem 0
+            border-radius: 5px
+            box-shadow: 0 4rem 4rem -1rem rgba(0, 0, 0, 0.3 )
+
+        .one
+            background: #767676
+        .two
+            background: white
+            color: $primaryDark
+        .three
+            background: #767676
+
+        .pricing-item
+            padding: 0 1rem
+
+            .item
+                display: flex
+                justify-content: space-between
+
+// End of Pricing Section Styling
+
+// Testimonial Section Styling
+.testimonial
+    width: 100%
+    height: 50vh
+    background: #000
+    margin-top: 5rem
+    transform: skew(20deg)
+    padding: 5rem 5rem
+    font-style: italic
+
+    .testimonial-cards
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: auto
+// End of Testimonial Section
+
+// Contact Form Section
+.contact-box
+    width: 100%
+    height: 100%
+    margin-top: 5rem
+
+    .contact-info, .contact-icons
+        display: flex
+        flex-direction: column
+
+    .contact-info
+        margin: 0 auto
+        background: #767676
+        width: 100%
+        padding: 0 3rem
+        @include box-shadow()
+
+    .contact-form
+        margin: 0 auto
+        background: $primaryFont
+        width: 100%
+        color: $primaryDark
+        margin: 1rem 0
+        padding: 0 3rem
+        @include box-shadow()
+
+    .contact-icons i, h4, .map
+        color: $primaryFont
+        margin: 0.8rem 0
+
+.contact
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+    padding: 0 5rem
+    grid-gap: 1rem
+
+// End of Contact Form Section Styling
+
+// Footer Section Styling
+.footer
+    margin-top: 5rem
+    background: #767676
+
+    .booking-btn
+        display: flex
+        flex-flow: row
+        justify-content: space-around
+        padding-top: 1rem
+
+.footer-content
+    text-align: center
+
+    ul li
+        list-style: none
+        display: inline-block
+
+        a
+            text-decoration: none
+            color: $primaryFont
+            margin: 1rem 1rem
+            font-size: $fontSmall
+            &:hover
+                border-bottom: $border
+
+.footer-icons i
+    margin: 0 2rem
+    color: $primaryDark
+
+// End of Footer Section Styling
+
+@media (max-width: 768px)
+    #menu-btn
+        display: inline-block
+
+    header
+        padding: 0.5rem 0.5rem
+
+        .navbar
+            position: absolute
+            top: 99%
+            left: 0
+            right: 0
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
+            &.active
+                clip-path: polygon (0 0, 100% 0, 100% 100%, 0 100%)
+
+            a
+                margin: 2rem
+                font-size: $fontSmall
+                display: block
+    section
+        margin: 0 auto
+        padding: 0
+
+    .home
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        padding: 0
+        grid-gap: 0
+
+        .image-section
+            img
+                padding: 0 1rem
