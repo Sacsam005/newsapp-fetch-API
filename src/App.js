@@ -26,7 +26,7 @@ export default class App extends Component {
           <Navbar />
           <LoadingBar color="#f11946" height={4} progress={this.state.progress} />
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/" component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
@@ -36,7 +36,7 @@ export default class App extends Component {
                 category="general"
               />
             </Route>
-            <Route exact path="/business component={Navbar}">
+            <Route exact path="/business" component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
@@ -46,7 +46,7 @@ export default class App extends Component {
                 category="business"
               />
             </Route>
-            <Route exact path="/entertainment ">
+            <Route exact path="/entertainment " component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
@@ -56,7 +56,7 @@ export default class App extends Component {
                 category="entertainment"
               />
             </Route>
-            <Route exact path="/general">
+            <Route exact path="/general" component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
@@ -66,7 +66,7 @@ export default class App extends Component {
                 category="general"
               />
             </Route>
-            <Route exact path="/health ">
+            <Route exact path="/health " component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
@@ -76,7 +76,7 @@ export default class App extends Component {
                 category="health"
               />
             </Route>
-            <Route exact path="/science ">
+            <Route exact path="/science " component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
@@ -86,7 +86,7 @@ export default class App extends Component {
                 category="science"
               />
             </Route>
-            <Route exact path="/sports ">
+            <Route exact path="/sports " component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
@@ -96,7 +96,7 @@ export default class App extends Component {
                 category="sports"
               />
             </Route>
-            <Route exact path="/technology">
+            <Route exact path="/technology" component={Navbar}>
               <News
                 setProgress={this.setProgress}
                 apiKey={this.apiKey}
